@@ -25,8 +25,7 @@ public class HomeWork2 {
         System.out.println(Quantity);
         System.out.println(Sum);
 
-        double total = 0;
-        total = Price + Tax * Quantity + Sum;
+        double total = Price + Tax * Quantity + Sum;
         System.out.println(total);
 
 
