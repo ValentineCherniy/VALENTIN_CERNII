@@ -15,5 +15,20 @@ public class HomeWork2 {
         System.out.println(JavaIsAmazing);
         System.out.println(Pi);
 
+        double Price = 3256;
+        double Tax = 18;
+        int Quantity = 3;
+        double Sum = 0;
+
+        System.out.println(Price);
+        System.out.println(Tax);
+        System.out.println(Quantity);
+        System.out.println(Sum);
+
+        double total = 0;
+        total = Price + Tax * Quantity + Sum;
+        System.out.println(total);
+
+
     }
 }
