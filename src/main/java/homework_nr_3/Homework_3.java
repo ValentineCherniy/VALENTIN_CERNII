@@ -50,5 +50,14 @@ public class Homework_3 {
             System.out.println(i);
         }
 
+        float sum = 0F;
+        for (int numerator = 1; numerator <= 97; numerator += 2){
+            int denominator = numerator + 2;
+            System.out.println("fraction check - " + numerator + "/" + denominator);
+            sum = sum + (float)numerator / denominator;
+            System.out.println("sum in progress = " + sum);
+        }
+        System.out.println("final sum of fractions = "+ sum);
+
     }
 }
