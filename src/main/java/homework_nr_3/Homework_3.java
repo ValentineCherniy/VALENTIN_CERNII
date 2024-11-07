@@ -3,8 +3,8 @@ package homework_nr_3;
 public class Homework_3 {
     public static void main(String[] args) {
 
-        int monthOfTheYear = 1;
-        switch (monthOfTheYear) {
+        int monthOfYear = 1;
+        switch (monthOfYear) {
             case 1:
                 System.out.println("January");
                 break;
@@ -43,6 +43,11 @@ public class Homework_3 {
             default:
                 System.out.println("Enter number from 1 to 12");
 
+        }
+
+
+        for (int i = 100; i <= 1000; i+=5) {
+            System.out.println(i);
         }
 
     }
