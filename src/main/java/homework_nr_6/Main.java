@@ -1,7 +1,5 @@
 package homework_nr_6;
 
-import static homework_nr_6.ArrayUtils.findMax;
-
 public class Main {
     public static void main(String[] args) {
         int[] numbers = new int[]{
