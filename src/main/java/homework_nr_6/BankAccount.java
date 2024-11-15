@@ -11,8 +11,7 @@ public class BankAccount {
     }
 
     public static double deposit (double balance, double depositAmount) {
-        balance += depositAmount;
-        return balance;
+        return balance += depositAmount;
     }
 
     public static double withdraw(double balance, double withdrawAmount) {
