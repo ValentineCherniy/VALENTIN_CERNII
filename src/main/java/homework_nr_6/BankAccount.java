@@ -10,10 +10,18 @@ public class BankAccount {
         this.balance = balance;
     }
 
+    public static double deposit (double balance, double depositAmount) {
+        balance += depositAmount;
+        return balance;
+    }
 
+    public static double withdraw(double balance, double withdrawAmount) {
+
+        if(balance >= withdrawAmount) {
+            return balance-= withdrawAmount;
+        } else return balance;
+
+    }
 }
-//3.Добавьте методы deposit(double amount) и withdraw(double amount).
-// Метод deposit должен увеличивать balance на указанную сумму,
-// а метод withdraw — уменьшать balance на указанную сумму, если достаточно средств на счете.
-//4.Инициализируйте объект типа BankAccount в методе main класса BankAccount, передав номер счета и начальный баланс.
-// Вызовите методы deposit и withdraw с разными значениями, и выведите текущий баланс на консоль после каждой операции.
+
+
