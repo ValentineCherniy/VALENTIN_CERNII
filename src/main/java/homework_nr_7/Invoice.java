@@ -54,14 +54,13 @@ public class Invoice {
     public Invoice(String model, String description, int amount, double price) {
         this.model = model;
         this.description = description;
-        this.amount = amount;
-        this.price = price;
+        if (amount <= 0) {this.amount = 0;} else {this.amount = amount;}
+        if (price <=0 ) {this.price = 0;} else {this.price = price;}
     }
 
-
-
-
-
-
-
+    public double FinalPrice (){
+        double finalPrice = 0;
+        finalPrice = price * amount;
+        return finalPrice;
+    }
 }
