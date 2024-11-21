@@ -9,17 +9,17 @@ public class Car extends Vehicle{
         return numberOfDoors;
     }
 
-    public void setNumberOfDoors(int numberOfDoors) {
-        this.numberOfDoors = numberOfDoors;
-    }
+//    public void setNumberOfDoors(int numberOfDoors) {
+//        this.numberOfDoors = numberOfDoors;
+//    }
 
     public boolean getIsElectric() {
         return isElectric;
     }
 
-    public void setElectric(boolean electric) {
-        isElectric = electric;
-    }
+//    public void setElectric(boolean electric) {
+//        isElectric = electric;
+//    }
 
 
 
@@ -30,6 +30,8 @@ public class Car extends Vehicle{
     }
 
 
-
+public void getInfoCar () {
+    System.out.print("doors: " + numberOfDoors + " electric: " + isElectric);
+}
 
 }
