@@ -13,7 +13,26 @@ public class Date {
     private int year = 0;
 
     public int getDay() {
-        return day;
+        int monthLenth = 0;
+        switch (monthIndex) {
+            case 1, 3, 5, 7, 8, 10, 12:
+                monthLenth = 31;
+            break;
+            case 4, 6, 9, 11:
+                monthLenth = 30;
+            break;
+            case 2:
+                monthLenth = 28;
+            break;
+            default:
+                 monthLenth = 0;
+        }
+            if ((day > 0) & (day <= monthLenth)) {
+                return day;
+            } else {
+                return 0;
+            }
+
     }
 
 //    public void setDay(int day) {
@@ -21,7 +40,11 @@ public class Date {
 //    }
 
     public int getMonthIndex() {
-        return monthIndex;
+        if ((monthIndex >=1) & (monthIndex <=12)) {
+            return monthIndex;
+        } else {
+            return 0;
+        }
     }
 
 //    public void setMonthIndex(int monthIndex) {
@@ -41,11 +64,8 @@ public class Date {
         this.monthIndex = monthIndex;
         this.year = year;
     }
-    public static final String[] monthName = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
-
-
-
-
-
+    public static final String[] monthName = {"incorrect month index","Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
 
 }
+
+
