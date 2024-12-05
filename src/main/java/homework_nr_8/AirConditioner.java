@@ -13,6 +13,6 @@ public class AirConditioner extends Appliance{
 
     @Override
     public void turnOn() {
-        System.out.println("Air conditioner is now cooling the room.");
+        System.out.println("Air conditioner is now cooling the room." + "\n");
     }
 }
