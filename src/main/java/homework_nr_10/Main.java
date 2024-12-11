@@ -9,10 +9,18 @@ public class Main {
                 el_1, el_2
         };
         for (int i = 0; i != herbivore.length; i++){
+            int nr = i+1;
             if (herbivore[i] instanceof Elephant tempCreature) {
+                System.out.println("Creature nr." + nr);
                 tempCreature.about();
                 System.out.print(" and ");
                 tempCreature.eat();
+                herbivore[i].moving();
+                herbivore[i].eating();
+                herbivore[i].makingSound();
+                herbivore[i].showInfo();
+                System.out.println();
+                herbivore[i].k
             }
         }
     }
